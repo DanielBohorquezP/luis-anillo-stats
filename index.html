@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Luis Ángel Anillo · Asesoría Estadística en Salud | Colombia</title>
-  <meta name="description" content="Asesoría estadística para investigación médica y clínica en Colombia. Doctor en Ciencias Naturales, investigador reconocido por Minciencias. Análisis de datos, machine learning en salud, apoyo en tesis y publicación de artículos científicos Q1." />
-  <meta name="keywords" content="asesoría estadística Colombia, análisis estadístico médico, ayuda con tesis estadística, bioestadística, machine learning en salud, asesoría tesis doctorado, estadística para investigación clínica, Barranquilla" />
+  <meta name="description" content="Asesoría estadística para investigación médica en Colombia. Reconocido por Minciencias. Machine learning en salud, apoyo en tesis y publicación de artículos científicos Q1." />
+  <meta name="robots" content="index, follow" />
   <meta name="author" content="Luis Ángel Anillo Arrieta" />
   <link rel="canonical" href="https://luisanillo.stats/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_CO" />
+  <meta property="og:url" content="https://luisanillo.stats/" />
   <meta property="og:title" content="Luis Ángel Anillo · Asesoría Estadística en Salud" />
   <meta property="og:description" content="Asesoría estadística experta para médicos, investigadores y estudiantes de posgrado en Colombia. Análisis de datos, machine learning en salud y publicación de artículos Q1." />
-  <meta property="og:image" content="assets/img/luis-hero.webp" />
+  <meta property="og:image" content="https://luisanillo.stats/assets/img/luis-hero.webp" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:type" content="image/webp" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luis Ángel Anillo · Asesoría Estadística en Salud" />
+  <meta name="twitter:description" content="Asesoría estadística para investigación médica en Colombia. Reconocido por Minciencias. Machine learning en salud, tesis y artículos Q1." />
+  <meta name="twitter:image" content="https://luisanillo.stats/assets/img/luis-hero.webp" />
 
   <meta name="theme-color" content="#1f6feb" />
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='7' fill='%231f6feb'/&gt;&lt;text x='16' y='22' font-size='17' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'&gt;Lα&lt;/text&gt;&lt;/svg&gt;" />
@@ -35,20 +42,126 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Luis Ángel Anillo Arrieta — Asesoría Estadística en Salud",
-    "description": "Asesoría estadística para investigación médica y clínica, machine learning en salud, apoyo en tesis de maestría y doctorado, y publicación de artículos científicos en Colombia.",
-    "areaServed": { "@type": "Country", "name": "Colombia" },
-    "email": "anilloluis1@gmail.com",
-    "image": "assets/img/luis-hero.webp",
-    "provider": {
-      "@type": "Person",
-      "name": "Luis Ángel Anillo Arrieta",
-      "jobTitle": "Doctor en Ciencias Naturales (Estadística en Salud) · Profesor Investigador",
-      "worksFor": { "@type": "CollegeOrUniversity", "name": "Universidad del Norte" },
-      "address": { "@type": "PostalAddress", "addressLocality": "Barranquilla", "addressCountry": "CO" },
-      "knowsAbout": ["Bioestadística", "Estadística en salud", "Machine learning en salud", "Evaluación económica en salud", "Modelamiento de enfermedades crónicas e infecciosas", "Análisis de datos", "R", "Python", "SPSS", "STATA"]
-    }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://luisanillo.stats/#service",
+        "name": "Luis Ángel Anillo Arrieta — Asesoría Estadística en Salud",
+        "description": "Asesoría estadística para investigación médica y clínica, machine learning en salud, apoyo en tesis de maestría y doctorado, y publicación de artículos científicos en Colombia.",
+        "url": "https://luisanillo.stats/",
+        "telephone": "+573004360580",
+        "email": "anilloluis1@gmail.com",
+        "image": "https://luisanillo.stats/assets/img/luis-hero.webp",
+        "areaServed": [
+          { "@type": "Country", "name": "Colombia" },
+          { "@type": "City", "name": "Barranquilla" },
+          { "@type": "City", "name": "Bogotá" },
+          { "@type": "City", "name": "Medellín" },
+          { "@type": "City", "name": "Cali" },
+          { "@type": "City", "name": "Bucaramanga" }
+        ],
+        "sameAs": ["https://www.instagram.com/luisanillo.stats/"],
+        "provider": { "@id": "https://luisanillo.stats/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://luisanillo.stats/#person",
+        "name": "Luis Ángel Anillo Arrieta",
+        "url": "https://luisanillo.stats/",
+        "jobTitle": "Doctor en Ciencias Naturales (Estadística en Salud) · Profesor Investigador",
+        "image": "https://luisanillo.stats/assets/img/luis-hero.webp",
+        "email": "anilloluis1@gmail.com",
+        "telephone": "+573004360580",
+        "sameAs": ["https://www.instagram.com/luisanillo.stats/"],
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad del Norte",
+          "sameAs": "https://www.uninorte.edu.co/"
+        },
+        "address": { "@type": "PostalAddress", "addressLocality": "Barranquilla", "addressCountry": "CO" },
+        "knowsAbout": ["Bioestadística", "Estadística en salud", "Machine learning en salud", "Evaluación económica en salud", "Modelamiento de enfermedades crónicas e infecciosas", "Análisis de datos", "R", "Python", "SPSS", "STATA", "Statgraphics"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://luisanillo.stats/#website",
+        "url": "https://luisanillo.stats/",
+        "name": "Luis Ángel Anillo · Asesoría Estadística en Salud",
+        "inLanguage": "es-CO",
+        "author": { "@id": "https://luisanillo.stats/#person" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://luisanillo.stats/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Puedo trabajar contigo si ya tengo los datos recolectados?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajo tanto desde el diseño del estudio como con bases de datos ya recolectadas. Reviso la calidad de los datos y propongo el análisis adecuado." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué software realizas los análisis?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Según lo que necesites: R, SPSS, Python, STATA o Statgraphics. Te entrego resultados reproducibles y, si lo deseas, el código documentado." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Atiendes a toda Colombia?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajo de forma remota con investigadores, clínicas y estudiantes de Bogotá, Medellín, Cali, Barranquilla, Bucaramanga y todo el país." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tarda un análisis?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Depende del alcance. Tras revisar tu proyecto te doy un tiempo estimado claro antes de empezar, sin sorpresas." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Garantizas que mi artículo se publique?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ningún asesor serio garantiza la aceptación de una revista. Lo que sí garantizo es rigor metodológico y acompañamiento experto que maximiza tus posibilidades de publicar en revistas de impacto." }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://luisanillo.stats/#howto",
+        "name": "Cómo contratar asesoría estadística con Luis Ángel Anillo",
+        "description": "Proceso paso a paso para obtener asesoría estadística en investigación en salud, desde el primer contacto hasta la publicación del artículo.",
+        "inLanguage": "es-CO",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Contacto", "text": "Me escribes por WhatsApp o el formulario y me cuentas tu proyecto y objetivos.", "url": "https://luisanillo.stats/#proceso" },
+          { "@type": "HowToStep", "position": 2, "name": "Diagnóstico", "text": "Revisamos tus datos y diseño. Te propongo el plan de análisis y un alcance claro.", "url": "https://luisanillo.stats/#proceso" },
+          { "@type": "HowToStep", "position": 3, "name": "Análisis", "text": "Ejecuto el análisis estadístico o de machine learning con rigor y reproducibilidad.", "url": "https://luisanillo.stats/#proceso" },
+          { "@type": "HowToStep", "position": 4, "name": "Entrega y publicación", "text": "Recibes resultados interpretados y, si quieres, te acompaño hasta publicar el artículo.", "url": "https://luisanillo.stats/#proceso" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.3389/fcvm.2025.1734611",
+        "name": "Comparative evaluation of ASCVD, SCORE-2, and HEARTS risk scores in Colombian adults at risk of type 2 diabetes: stratification, concordance, and associated factors",
+        "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1734611/full",
+        "author": { "@id": "https://luisanillo.stats/#person" },
+        "datePublished": "2025",
+        "isPartOf": { "@type": "Periodical", "name": "Frontiers in Cardiovascular Medicine" },
+        "identifier": { "@type": "PropertyValue", "propertyID": "doi", "value": "10.3389/fcvm.2025.1734611" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext",
+        "name": "Determinantes del control glucémico en atención primaria: análisis poblacional en pacientes con diabetes tipo 2",
+        "url": "https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext",
+        "author": { "@id": "https://luisanillo.stats/#person" },
+        "datePublished": "2025",
+        "isPartOf": { "@type": "Periodical", "name": "Primary Care Diabetes" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext",
+        "name": "Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano",
+        "url": "https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext",
+        "author": { "@id": "https://luisanillo.stats/#person" },
+        "datePublished": "2024",
+        "isPartOf": { "@type": "Periodical", "name": "Primary Care Diabetes" }
+      }
+    ]
   }
   </script>
 </head>
@@ -77,7 +190,7 @@
         <a href="#faq">Preguntas</a>
       </nav>
 
-      <a class="btn btn-wa nav-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+      <a class="btn btn-wa nav-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener noreferrer">
         <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
         WhatsApp
       </a>
@@ -111,7 +224,7 @@
           </ul>
 
           <div class="hero-cta reveal">
-            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
               Hablar por WhatsApp
             </a>
@@ -156,7 +269,7 @@
           <span class="stat-label">Doctor en Ciencias Naturales (Estadística)</span>
         </div>
       </div>
-      <p class="stats-note container">Cifras de referencia — actualizables con tus datos reales.</p>
+      <p class="stats-note container">Datos actualizados a junio 2026.</p>
     </section>
 
     <!-- ============================= EDUCACIÓN ============================= -->
@@ -200,7 +313,7 @@
               <li>Pruebas de hipótesis y modelos de regresión</li>
               <li>Interpretación clara de resultados</li>
             </ul>
-            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20la%20asesor%C3%ADa%20estad%C3%ADstica%20para%20investigaci%C3%B3n%20m%C3%A9dica." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20la%20asesor%C3%ADa%20estad%C3%ADstica%20para%20investigaci%C3%B3n%20m%C3%A9dica." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
           </article>
 
           <article class="card glass reveal" data-tilt>
@@ -214,7 +327,7 @@
               <li>Análisis avanzado de datos</li>
               <li>Redacción de resultados y discusión</li>
             </ul>
-            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20necesito%20apoyo%20estad%C3%ADstico%20para%20mi%20tesis." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20necesito%20apoyo%20estad%C3%ADstico%20para%20mi%20tesis." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
           </article>
 
           <article class="card glass reveal" data-tilt>
@@ -228,7 +341,7 @@
               <li>Modelamiento de enfermedades crónicas e infecciosas</li>
               <li>Evaluaciones económicas en salud</li>
             </ul>
-            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20machine%20learning%20aplicado%20a%20salud." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20machine%20learning%20aplicado%20a%20salud." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
           </article>
 
           <article class="card glass reveal" data-tilt>
@@ -242,7 +355,7 @@
               <li>Selección de revista y formato</li>
               <li>Respuesta a comentarios de revisores</li>
             </ul>
-            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20apoyo%20para%20publicar%20un%20art%C3%ADculo%20cient%C3%ADfico." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20apoyo%20para%20publicar%20un%20art%C3%ADculo%20cient%C3%ADfico." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
           </article>
         </div>
       </div>
@@ -280,7 +393,7 @@
           <article class="aud-card aud-cta reveal">
             <h3>¿No te ves en la lista?</h3>
             <p>Si tu proyecto involucra datos en salud, hablemos. Cuéntame tu caso sin compromiso.</p>
-            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener">Escríbeme →</a>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer">Escríbeme →</a>
           </article>
         </div>
       </div>
@@ -371,9 +484,9 @@
         </div>
 
         <ul class="pubs-list reveal">
-          <li><span class="pub-tag">Q1</span> <em>Predictores de mortalidad cardiovascular: un enfoque estadístico avanzado en pacientes de alto riesgo.</em> <span class="pub-journal">Frontiers in Cardiovascular Medicine · 2025</span> <a href="https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1734611/full" target="_blank" rel="noopener">Leer artículo →</a></li>
-          <li><span class="pub-tag">Q1</span> <em>Determinantes del control glucémico en atención primaria: análisis poblacional en pacientes con diabetes tipo 2.</em> <span class="pub-journal">Primary Care Diabetes · 2025</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext" target="_blank" rel="noopener">Leer artículo →</a></li>
-          <li><span class="pub-tag">Q1</span> <em>Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano.</em> <span class="pub-journal">Primary Care Diabetes · 2024</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext" target="_blank" rel="noopener">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Predictores de mortalidad cardiovascular: un enfoque estadístico avanzado en pacientes de alto riesgo.</em> <span class="pub-journal">Frontiers in Cardiovascular Medicine · 2025</span> <a href="https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1734611/full" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Determinantes del control glucémico en atención primaria: análisis poblacional en pacientes con diabetes tipo 2.</em> <span class="pub-journal">Primary Care Diabetes · 2025</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano.</em> <span class="pub-journal">Primary Care Diabetes · 2024</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
         </ul>
       </div>
     </section>
@@ -420,12 +533,12 @@
           <p class="reveal">Respondo personalmente. La forma más rápida es WhatsApp, pero también puedes dejarme tus datos y te contacto.</p>
 
           <div class="contact-direct reveal">
-            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
               Escribir por WhatsApp
             </a>
             <a class="contact-link" data-email href="mailto:anilloluis1@gmail.com">anilloluis1@gmail.com</a>
-            <a class="contact-link" data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener">@luisanillo.stats</a>
+            <a class="contact-link" data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener noreferrer">@luisanillo.stats</a>
           </div>
         </div>
 
@@ -481,16 +594,16 @@
         <a href="#publicaciones">Publicaciones</a>
         <a href="#contacto">Contacto</a>
         <a data-email href="mailto:anilloluis1@gmail.com">Correo</a>
-        <a data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener">Instagram</a>
+        <a data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener noreferrer">Instagram</a>
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© <span data-year>2026</span> Luis Ángel Anillo Arrieta. Todos los derechos reservados.</p>
+      <p>© <span data-year>2026</span> Luis Ángel Anillo Arrieta. Todos los derechos reservados. · <time datetime="2026-06-09">Última actualización: junio 2026</time></p>
     </div>
   </footer>
 
   <!-- floating WhatsApp -->
-  <a class="wa-fab" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <a class="wa-fab" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true" width="28" height="28"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
   </a>
 

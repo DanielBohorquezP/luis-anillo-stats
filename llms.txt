@@ -1,0 +1,40 @@
+# Luis Ángel Anillo Arrieta — Asesoría Estadística en Salud
+
+> Doctor en Ciencias Naturales (Estadística en Salud), Magíster en Estadística Aplicada, Economista. Investigador reconocido por Minciencias (agencia colombiana de ciencia y tecnología). Profesor Investigador en la Universidad del Norte, Barranquilla, Colombia. Más de 10 años de experiencia en análisis de datos en salud. Más de 20 artículos publicados, varios en revistas Q1. Ofrece asesoría estadística para investigación médica y clínica de forma remota a toda Colombia.
+
+## Servicios
+
+- Asesoría estadística para investigación médica y clínica (diseño de estudio, pruebas de hipótesis, modelos de regresión)
+- Desarrollo y revisión de tesis de maestría y doctorado (diseño metodológico, análisis avanzado, redacción de resultados)
+- Machine learning y análisis predictivos en salud (modelos predictivos, clasificación, modelamiento de enfermedades crónicas e infecciosas)
+- Construcción y publicación de artículos científicos (estructura, selección de revista, respuesta a revisores)
+
+## Software estadístico
+
+R, SPSS, Python, STATA, Statgraphics
+
+## Cobertura geográfica
+
+Atención remota a toda Colombia: Barranquilla, Bogotá, Medellín, Cali, Bucaramanga y resto del país.
+
+## Credenciales verificables
+
+- Doctor en Ciencias Naturales (Estadística en Salud)
+- Magíster en Estadística Aplicada
+- Economista
+- Investigador reconocido por Minciencias
+- Profesor Investigador — Universidad del Norte (uninorte.edu.co)
+
+## Publicaciones recientes (Q1)
+
+- Frontiers in Cardiovascular Medicine, 2025: https://doi.org/10.3389/fcvm.2025.1734611
+- Primary Care Diabetes, 2025: https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext
+- Primary Care Diabetes, 2024: https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext
+
+## Contacto
+
+- Sitio web: https://luisanillo.stats/
+- Email: anilloluis1@gmail.com
+- WhatsApp: +57 300 436 0580
+- Instagram: https://www.instagram.com/luisanillo.stats/
+- Ciudad base: Barranquilla, Colombia
