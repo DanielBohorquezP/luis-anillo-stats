@@ -206,19 +206,20 @@
       .then(function (data) {
         if (data.result === 'ok') {
           if (status) {
-            status.textContent = '¡Mensaje enviado! Te respondo pronto.';
+            status.textContent = '¡Enviado correctamente!';
             status.className = 'form-status ok';
           }
           form.reset();
+          window.setTimeout(function () { btn.disabled = false; }, 3000);
         } else { throw new Error(); }
       })
       .catch(function () {
         if (status) {
           status.textContent = 'Hubo un error. Escríbeme a anilloluis1@gmail.com';
-          status.className = 'form-status error';
+          status.className = 'form-status err';
         }
-      })
-      .finally(function () { btn.disabled = false; });
+        btn.disabled = false;
+      });
     });
   }
 
