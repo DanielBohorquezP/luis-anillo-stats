@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Luis Ángel Anillo · Asesoría Estadística en Salud | Colombia</title>
+  <meta name="description" content="Asesoría estadística para investigación médica y clínica en Colombia. Doctor en Ciencias Naturales, investigador reconocido por Minciencias. Análisis de datos, machine learning en salud, apoyo en tesis y publicación de artículos científicos Q1." />
+  <meta name="keywords" content="asesoría estadística Colombia, análisis estadístico médico, ayuda con tesis estadística, bioestadística, machine learning en salud, asesoría tesis doctorado, estadística para investigación clínica, Barranquilla" />
+  <meta name="author" content="Luis Ángel Anillo Arrieta" />
+  <link rel="canonical" href="https://luisanillo.stats/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="Luis Ángel Anillo · Asesoría Estadística en Salud" />
+  <meta property="og:description" content="Asesoría estadística experta para médicos, investigadores y estudiantes de posgrado en Colombia. Análisis de datos, machine learning en salud y publicación de artículos Q1." />
+  <meta property="og:image" content="assets/img/luis-hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#1f6feb" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='7' fill='%231f6feb'/&gt;&lt;text x='16' y='22' font-size='17' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'&gt;Lα&lt;/text&gt;&lt;/svg&gt;" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
+  <!-- Hero image priority -->
+  <link rel="preload" as="image" href="assets/img/luis-hero.webp" fetchpriority="high" />
+
+  <link rel="stylesheet" href="styles.css?v=20260609" />
+
+  <!-- SEO: structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Luis Ángel Anillo Arrieta — Asesoría Estadística en Salud",
+    "description": "Asesoría estadística para investigación médica y clínica, machine learning en salud, apoyo en tesis de maestría y doctorado, y publicación de artículos científicos en Colombia.",
+    "areaServed": { "@type": "Country", "name": "Colombia" },
+    "email": "anilloluis1@gmail.com",
+    "image": "assets/img/luis-hero.webp",
+    "provider": {
+      "@type": "Person",
+      "name": "Luis Ángel Anillo Arrieta",
+      "jobTitle": "Doctor en Ciencias Naturales (Estadística en Salud) · Profesor Investigador",
+      "worksFor": { "@type": "CollegeOrUniversity", "name": "Universidad del Norte" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Barranquilla", "addressCountry": "CO" },
+      "knowsAbout": ["Bioestadística", "Estadística en salud", "Machine learning en salud", "Evaluación económica en salud", "Modelamiento de enfermedades crónicas e infecciosas", "Análisis de datos", "R", "Python", "SPSS", "STATA"]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- decorative animated mesh background -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ============================= NAV ============================= -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">Lα</span>
+        <span class="brand-text">
+          <strong>Luis Ángel Anillo</strong>
+          <em>Estadística en Salud</em>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#para-quien">¿Para quién?</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+
+      <a class="btn btn-wa nav-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+        <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker reveal">Profesor Investigador · Universidad del Norte</p>
+          <h1 class="hero-title reveal">
+            Asesoría estadística para que tu <em>investigación en salud</em> se publique.
+          </h1>
+          <p class="hero-sub reveal">
+            Convierte tus datos en resultados sólidos y publicables. Acompaño a médicos,
+            clínicas e investigadores en Colombia con análisis rigurosos, machine learning
+            aplicado a salud y apoyo experto en tesis y artículos científicos.
+          </p>
+
+          <ul class="hero-badges reveal" aria-label="Credenciales">
+            <li><span class="dot" aria-hidden="true"></span> Reconocido por <strong>Minciencias</strong></li>
+            <li><span class="dot" aria-hidden="true"></span> Autor de artículos <strong>Q1</strong></li>
+            <li><span class="dot" aria-hidden="true"></span> Barranquilla, Colombia</li>
+          </ul>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+              <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
+              Hablar por WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="assets/img/luis-hero.webp" alt="Luis Ángel Anillo Arrieta, asesor estadístico en salud" fetchpriority="high" loading="eager" decoding="sync" width="600" height="800" />
+            <div class="hero-photo-glow" aria-hidden="true"></div>
+          </div>
+          <div class="hero-float-card glass" aria-hidden="true">
+            <span class="hfc-num">PhD</span>
+            <span class="hfc-label">Ciencias Naturales<br>Estadística en Salud</span>
+          </div>
+          <div class="hero-float-chip glass">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7 14l3-4 3 3 5-7"/></svg>
+            <span>Modelos &amp; ML aplicados a salud</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= STATS ============================= -->
+    <section class="stats" aria-label="Indicadores">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num"><span data-count-to="10" data-count-suffix="+">10+</span></span>
+          <span class="stat-label">años en análisis de datos en salud</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num"><span data-count-to="20" data-count-suffix="+">20+</span></span>
+          <span class="stat-label">artículos publicados <em>(varios Q1)</em></span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num"><span data-count-to="5">5</span></span>
+          <span class="stat-label">software: R · SPSS · Python · STATA · Statgraphics</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num">PhD</span>
+          <span class="stat-label">Doctor en Ciencias Naturales (Estadística)</span>
+        </div>
+      </div>
+      <p class="stats-note container">Cifras de referencia — actualizables con tus datos reales.</p>
+    </section>
+
+    <!-- ============================= EDUCACIÓN ============================= -->
+    <section class="edu" id="que-es">
+      <div class="container edu-inner">
+        <p class="kicker reveal">¿Por qué importa?</p>
+        <h2 class="reveal">La estadística decide si tu estudio se <em>publica</em> o se rechaza.</h2>
+        <div class="edu-cols">
+          <p class="reveal">
+            En investigación médica y clínica, un buen dato mal analizado no sirve. Las revistas de
+            alto impacto exigen métodos correctos: el diseño adecuado, la prueba estadística que
+            corresponde, modelos bien especificados y resultados interpretados con rigor.
+          </p>
+          <p class="reveal">
+            La <strong>estadística en salud</strong> (o bioestadística) traduce tus datos en evidencia:
+            mide asociaciones, controla sesgos, modela riesgos y predice desenlaces. Es la diferencia
+            entre un manuscrito devuelto y un artículo aceptado en una revista <strong>Q1</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICIOS ============================= -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Servicios</p>
+          <h2>¿Cómo puedo <em>ayudarte</em>?</h2>
+          <p class="section-lead">Acompañamiento experto en cada etapa de tu investigación, desde los datos crudos hasta la publicación.</p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card glass reveal" data-tilt>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="6" y="11" width="3" height="7"/><rect x="11" y="7" width="3" height="11"/><rect x="16" y="13" width="3" height="5"/></svg>
+            </span>
+            <h3>Asesoría estadística para investigación médica y clínica</h3>
+            <p>¿Tienes datos pero no sabes cómo analizarlos? Definimos el diseño, la prueba correcta y el modelo que tu estudio necesita.</p>
+            <ul class="card-list">
+              <li>Plan de análisis estadístico</li>
+              <li>Pruebas de hipótesis y modelos de regresión</li>
+              <li>Interpretación clara de resultados</li>
+            </ul>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20la%20asesor%C3%ADa%20estad%C3%ADstica%20para%20investigaci%C3%B3n%20m%C3%A9dica." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h7"/></svg>
+            </span>
+            <h3>Desarrollo y revisión de tesis (maestría y doctorado)</h3>
+            <p>Acompañamiento metodológico para que tu trabajo de grado tenga bases estadísticas sólidas y defendibles ante el jurado.</p>
+            <ul class="card-list">
+              <li>Diseño metodológico y muestral</li>
+              <li>Análisis avanzado de datos</li>
+              <li>Redacción de resultados y discusión</li>
+            </ul>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20necesito%20apoyo%20estad%C3%ADstico%20para%20mi%20tesis." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.6 9.5 10M16.9 6.6 14.5 10M7 17.4 9.5 14M17 17.4 14.5 14"/></svg>
+            </span>
+            <h3>Machine learning y análisis predictivos en salud</h3>
+            <p>Algoritmos de aprendizaje automatizado para predecir desenlaces clínicos, modelar enfermedades y descubrir patrones en tus datos.</p>
+            <ul class="card-list">
+              <li>Modelos predictivos y de clasificación</li>
+              <li>Modelamiento de enfermedades crónicas e infecciosas</li>
+              <li>Evaluaciones económicas en salud</li>
+            </ul>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20machine%20learning%20aplicado%20a%20salud." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>Construcción y publicación de artículos científicos</h3>
+            <p>Te acompaño en todo el camino editorial: del análisis a la respuesta a revisores, para que tu artículo llegue a revistas de impacto.</p>
+            <ul class="card-list">
+              <li>Estructura y redacción científica</li>
+              <li>Selección de revista y formato</li>
+              <li>Respuesta a comentarios de revisores</li>
+            </ul>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20apoyo%20para%20publicar%20un%20art%C3%ADculo%20cient%C3%ADfico." target="_blank" rel="noopener">Consultar por WhatsApp →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PARA QUIÉN ============================= -->
+    <section class="audience" id="para-quien">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">¿Para quién?</p>
+          <h2>Trabajo con quienes <em>investigan en salud</em></h2>
+        </header>
+
+        <div class="aud-grid">
+          <article class="aud-card reveal">
+            <h3>Médicos investigadores</h3>
+            <p>Tienes datos clínicos y publicas artículos, pero necesitas asegurar que el análisis sea correcto y de impacto.</p>
+          </article>
+          <article class="aud-card reveal">
+            <h3>Residentes y especialistas</h3>
+            <p>Tu trabajo de grado o proyecto obligatorio requiere análisis estadístico y no sabes por dónde empezar.</p>
+          </article>
+          <article class="aud-card reveal">
+            <h3>Estudiantes de posgrado</h3>
+            <p>Maestría o doctorado en salud, epidemiología o ciencias: tu tesis necesita estadística avanzada bien hecha.</p>
+          </article>
+          <article class="aud-card reveal">
+            <h3>Investigadores universitarios</h3>
+            <p>Lideras un grupo de investigación y buscas asesoría experta para publicar en revistas de alto impacto.</p>
+          </article>
+          <article class="aud-card reveal">
+            <h3>Clínicas e instituciones de salud</h3>
+            <p>Tu equipo realiza estudios internos y quiere publicar artículos institucionales con respaldo estadístico confiable.</p>
+          </article>
+          <article class="aud-card aud-cta reveal">
+            <h3>¿No te ves en la lista?</h3>
+            <p>Si tu proyecto involucra datos en salud, hablemos. Cuéntame tu caso sin compromiso.</p>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener">Escríbeme →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SOBRE MÍ ============================= -->
+    <section class="about" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/img/luis-uninorte.webp" alt="Luis Ángel Anillo presentando una investigación en la Universidad del Norte, junto al logo de Minciencias" loading="lazy" decoding="async" width="1000" height="563" />
+          <div class="about-media-tag glass">Ponencia · Universidad del Norte · Minciencias</div>
+        </div>
+        <div class="about-copy">
+          <p class="kicker reveal">Sobre mí</p>
+          <h2 class="reveal">Luis Ángel Anillo Arrieta</h2>
+          <p class="reveal">
+            Doctor en Ciencias Naturales con línea de investigación en Estadística, Magíster en
+            Estadística Aplicada y Economista. Analista de datos, investigador y docente
+            universitario.
+          </p>
+          <p class="reveal">
+            En los últimos años me he dedicado al modelamiento de enfermedades crónicas e
+            infecciosas, a las evaluaciones económicas en salud y a la aplicación de algoritmos de
+            aprendizaje automatizado (Machine Learning). He desarrollado gran destreza en el manejo
+            de bases de datos y en el análisis y formulación de proyectos de investigación.
+          </p>
+
+          <ul class="creds reveal">
+            <li><strong>Economista</strong></li>
+            <li><strong>Magíster</strong> en Estadística Aplicada</li>
+            <li><strong>Doctor</strong> en Ciencias Naturales (Estadística en Salud)</li>
+            <li>Investigador reconocido por <strong>Minciencias</strong></li>
+          </ul>
+
+          <div class="software reveal" aria-label="Software estadístico">
+            <span class="soft-label">Software:</span>
+            <span class="chip">R</span>
+            <span class="chip">SPSS</span>
+            <span class="chip">Python</span>
+            <span class="chip">STATA</span>
+            <span class="chip">Statgraphics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PROCESO ============================= -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Cómo trabajamos</p>
+          <h2>Un proceso <em>claro</em>, de los datos a la publicación</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <h3>Contacto</h3>
+            <p>Me escribes por WhatsApp o el formulario y me cuentas tu proyecto y objetivos.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Diagnóstico</h3>
+            <p>Revisamos tus datos y diseño. Te propongo el plan de análisis y un alcance claro.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Análisis</h3>
+            <p>Ejecuto el análisis estadístico o de machine learning con rigor y reproducibilidad.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Entrega &amp; publicación</h3>
+            <p>Recibes resultados interpretados y, si quieres, te acompaño hasta publicar el artículo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= PUBLICACIONES ============================= -->
+    <section class="pubs" id="publicaciones">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Reconocimiento &amp; publicaciones</p>
+          <h2>Respaldo <em>científico</em> verificable</h2>
+          <p class="section-lead">Investigador reconocido por Minciencias y autor de múltiples artículos en revistas científicas, varios en el primer cuartil (Q1).</p>
+        </header>
+
+        <div class="pubs-badges reveal">
+          <span class="pub-badge"><strong>Minciencias</strong><br>Investigador reconocido</span>
+          <span class="pub-badge"><strong>Q1</strong><br>Revistas de primer cuartil</span>
+          <span class="pub-badge"><strong>Uninorte</strong><br>Profesor investigador</span>
+        </div>
+
+        <ul class="pubs-list reveal">
+          <li><span class="pub-tag">Q1</span> <em>Predictores de mortalidad cardiovascular: un enfoque estadístico avanzado en pacientes de alto riesgo.</em> <span class="pub-journal">Frontiers in Cardiovascular Medicine · 2025</span> <a href="https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1734611/full" target="_blank" rel="noopener">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Determinantes del control glucémico en atención primaria: análisis poblacional en pacientes con diabetes tipo 2.</em> <span class="pub-journal">Primary Care Diabetes · 2025</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext" target="_blank" rel="noopener">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano.</em> <span class="pub-journal">Primary Care Diabetes · 2024</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext" target="_blank" rel="noopener">Leer artículo →</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= FAQ ============================= -->
+    <section class="faq" id="faq">
+      <div class="container faq-inner">
+        <header class="section-head reveal">
+          <p class="kicker">Preguntas frecuentes</p>
+          <h2>Antes de <em>empezar</em></h2>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item reveal" open>
+            <summary>¿Puedo trabajar contigo si ya tengo los datos recolectados?</summary>
+            <div class="faq-body"><p>Sí. Trabajo tanto desde el diseño del estudio como con bases de datos ya recolectadas. Reviso la calidad de los datos y propongo el análisis adecuado.</p></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿En qué software realizas los análisis?</summary>
+            <div class="faq-body"><p>Según lo que necesites: R, SPSS, Python, STATA o Statgraphics. Te entrego resultados reproducibles y, si lo deseas, el código documentado.</p></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Atiendes a toda Colombia?</summary>
+            <div class="faq-body"><p>Sí. Trabajo de forma remota con investigadores, clínicas y estudiantes de Bogotá, Medellín, Cali, Barranquilla, Bucaramanga y todo el país.</p></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Cuánto tarda un análisis?</summary>
+            <div class="faq-body"><p>Depende del alcance. Tras revisar tu proyecto te doy un tiempo estimado claro antes de empezar, sin sorpresas.</p></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Garantizas que mi artículo se publique?</summary>
+            <div class="faq-body"><p>Ningún asesor serio garantiza la aceptación de una revista. Lo que sí garantizo es rigor metodológico y acompañamiento experto que maximiza tus posibilidades de publicar en revistas de impacto.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACTO ============================= -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="kicker reveal">Contacto</p>
+          <h2 class="reveal">Cuéntame tu <em>proyecto</em></h2>
+          <p class="reveal">Respondo personalmente. La forma más rápida es WhatsApp, pero también puedes dejarme tus datos y te contacto.</p>
+
+          <div class="contact-direct reveal">
+            <a class="btn btn-primary btn-wa" data-magnetic data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener">
+              <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
+              Escribir por WhatsApp
+            </a>
+            <a class="contact-link" data-email href="mailto:anilloluis1@gmail.com">anilloluis1@gmail.com</a>
+            <a class="contact-link" data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener">@luisanillo.stats</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal" data-contact-form>
+          <div class="field">
+            <label for="cf-name">Nombre</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre" />
+          </div>
+          <div class="field">
+            <label for="cf-email">Correo</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com" />
+          </div>
+          <div class="field">
+            <label for="cf-role">¿Cuál es tu perfil?</label>
+            <select id="cf-role" name="role">
+              <option value="Médico investigador">Médico investigador</option>
+              <option value="Residente / especialista">Residente / especialista</option>
+              <option value="Estudiante de posgrado">Estudiante de posgrado</option>
+              <option value="Investigador universitario">Investigador universitario</option>
+              <option value="Clínica / institución">Clínica / institución</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-msg">Cuéntame tu proyecto</label>
+            <textarea id="cf-msg" name="message" rows="4" required placeholder="¿Qué necesitas analizar? ¿En qué etapa estás?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">Lα</span>
+        <div>
+          <strong>Luis Ángel Anillo Arrieta</strong>
+          <span>Asesoría Estadística en Salud · Barranquilla, Colombia</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#contacto">Contacto</a>
+        <a data-email href="mailto:anilloluis1@gmail.com">Correo</a>
+        <a data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Luis Ángel Anillo Arrieta. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- floating WhatsApp -->
+  <a class="wa-fab" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20estad%C3%ADstica." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" width="28" height="28"><path fill="currentColor" d="M.06 24l1.7-6.18A11.86 11.86 0 0 1 .12 11.9C.12 5.34 5.46 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.49 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.68-1.45L.06 24zM6.6 20.13c1.66.99 3.25 1.58 5.42 1.58 5.46 0 9.9-4.44 9.91-9.9a9.82 9.82 0 0 0-2.9-7 9.82 9.82 0 0 0-7-2.9c-5.46 0-9.9 4.44-9.9 9.9 0 2.28.6 3.86 1.65 5.5l-1 3.65 3.82-1zM17.5 14.3c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.4.25-.7.25-1.29.18-1.41z"/></svg>
+  </a>
+
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js?v=20260609"></script>
+  <script defer src="main.js?v=20260609"></script>
+</body>
+</html>
