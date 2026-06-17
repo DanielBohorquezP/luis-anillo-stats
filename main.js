@@ -171,24 +171,54 @@
     });
   }
 
-  /* ---- Contact form (no backend — opens email client) ---- */
+  /* ---- Contact form → Google Apps Script ---- */
   function initForm() {
-    var form = $("[data-contact-form]");
+    var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6qQLtIhDfYBcMjNEOOtlb7yuuQm8oQQQHYkdK7kVpC0c-S5qJ0bdQHN0R5mNcZZ3qDA/exec';
+    var form = $('[data-contact-form]');
     if (!form) return;
-    var status = $("[data-form-status]", form);
-    form.addEventListener("submit", function (e) {
+    var status = $('[data-form-status]', form);
+    var btn = form.querySelector('[type="submit"]');
+
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
-      var name = (form.name && form.name.value || "").trim();
-      var email = (form.email && form.email.value || "").trim();
-      var role = (form.role && form.role.value || "").trim();
-      var msg = (form.message && form.message.value || "").trim();
-      var to = contact.email || "anilloluis1@gmail.com";
-      var subject = "Consulta de asesoría estadística — " + name;
-      var body = "Nombre: " + name + "\nCorreo: " + email + "\nPerfil: " + role + "\n\n" + msg;
-      var href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      if (status) { status.textContent = "Abriendo tu correo… si no se abre, escríbeme directamente a " + to; status.className = "form-status ok"; }
-      window.location.href = href;
+
+      var hp = (form._hp && form._hp.value || '');
+      if (hp) return;
+
+      var payload = {
+        name:    (form.name    && form.name.value    || '').trim(),
+        email:   (form.email   && form.email.value   || '').trim(),
+        role:    (form.role    && form.role.value    || '').trim(),
+        message: (form.message && form.message.value || '').trim(),
+        _hp: hp
+      };
+
+      btn.disabled = true;
+      if (status) { status.textContent = 'Enviando…'; status.className = 'form-status'; }
+
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify(payload)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.result === 'ok') {
+          if (status) {
+            status.textContent = '¡Mensaje enviado! Te respondo pronto.';
+            status.className = 'form-status ok';
+          }
+          form.reset();
+        } else { throw new Error(); }
+      })
+      .catch(function () {
+        if (status) {
+          status.textContent = 'Hubo un error. Escríbeme a anilloluis1@gmail.com';
+          status.className = 'form-status error';
+        }
+      })
+      .finally(function () { btn.disabled = false; });
     });
   }
 

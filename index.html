@@ -453,6 +453,11 @@
             <label for="cf-msg">Cuéntame tu proyecto</label>
             <textarea id="cf-msg" name="message" rows="4" required placeholder="¿Qué necesitas analizar? ¿En qué etapa estás?"></textarea>
           </div>
+          <!-- honeypot: oculto para humanos, bots lo llenan -->
+          <div class="field" aria-hidden="true" style="display:none">
+            <label for="cf-hp">No llenar</label>
+            <input id="cf-hp" name="_hp" type="text" tabindex="-1" autocomplete="off" />
+          </div>
           <button class="btn btn-primary" type="submit">Enviar mensaje</button>
           <p class="form-status" data-form-status role="status" aria-live="polite"></p>
         </form>
