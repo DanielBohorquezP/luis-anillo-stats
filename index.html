@@ -27,7 +27,7 @@
   <meta name="twitter:image" content="https://luis-anillo-stats.vercel.app/assets/img/luis-hero.webp" />
 
   <meta name="theme-color" content="#1f6feb" />
-  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='7' fill='%231f6feb'/&gt;&lt;text x='16' y='22' font-size='17' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'&gt;Lα&lt;/text&gt;&lt;/svg&gt;" />
+  <link rel="icon" href="assets/img/ISOTIPO ANILLO.png" type="image/png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,14 +73,23 @@
         "image": "https://luis-anillo-stats.vercel.app/assets/img/luis-hero.webp",
         "email": "anilloluis1@gmail.com",
         "telephone": "+573004360580",
-        "sameAs": ["https://www.instagram.com/luisanillo.stats/"],
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "https://orcid.org/0000-0002-3136-7636"
+        },
+        "sameAs": [
+          "https://www.instagram.com/luisanillo.stats/",
+          "https://orcid.org/0000-0002-3136-7636",
+          "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001648158"
+        ],
         "worksFor": {
           "@type": "CollegeOrUniversity",
           "name": "Universidad del Norte",
           "sameAs": "https://www.uninorte.edu.co/"
         },
         "address": { "@type": "PostalAddress", "addressLocality": "Barranquilla", "addressCountry": "CO" },
-        "knowsAbout": ["Bioestadística", "Estadística en salud", "Machine learning en salud", "Evaluación económica en salud", "Modelamiento de enfermedades crónicas e infecciosas", "Análisis de datos", "R", "Python", "SPSS", "STATA", "Statgraphics"]
+        "knowsAbout": ["Bioestadística", "Estadística en salud", "Machine learning en salud", "Evaluación económica en salud", "Modelamiento de enfermedades crónicas e infecciosas", "Análisis de datos", "Visualización de datos", "Análisis geoespacial", "R", "Python", "SPSS", "STATA", "Statgraphics"]
       },
       {
         "@type": "WebSite",
@@ -176,7 +185,7 @@
   <header class="nav" id="top">
     <div class="container nav-inner">
       <a class="brand" href="#top" aria-label="Inicio">
-        <span class="brand-mark" aria-hidden="true">Lα</span>
+        <img class="brand-mark" src="assets/img/ISOTIPO ANILLO.png" alt="Luis Ángel Anillo" />
         <span class="brand-text">
           <strong>Luis Ángel Anillo</strong>
           <em>Estadística en Salud</em>
@@ -347,6 +356,20 @@
 
           <article class="card glass reveal" data-tilt>
             <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </span>
+            <h3>Visualización de datos y análisis geoespacial</h3>
+            <p>Transforma tus datos en visualizaciones comprensibles y mapas que comunican patrones territoriales en salud, epidemiología y más.</p>
+            <ul class="card-list">
+              <li>Dashboards y gráficas para publicaciones</li>
+              <li>Mapas de distribución geográfica de enfermedades</li>
+              <li>Análisis espacial de indicadores en salud</li>
+            </ul>
+            <a class="card-cta" data-wa href="https://wa.me/573004360580?text=Hola%20Luis%20%C3%81ngel%2C%20me%20interesa%20visualizaci%C3%B3n%20de%20datos%20o%20an%C3%A1lisis%20geoespacial." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <span class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
             </span>
             <h3>Construcción y publicación de artículos científicos</h3>
@@ -428,6 +451,12 @@
             <li><strong>Doctor</strong> en Ciencias Naturales (Estadística en Salud)</li>
             <li>Investigador reconocido por <strong>Minciencias</strong></li>
           </ul>
+
+          <div class="academic-profiles reveal" aria-label="Perfiles académicos verificables">
+            <span class="soft-label">Perfiles verificables:</span>
+            <a class="chip chip-link" href="https://orcid.org/0000-0002-3136-7636" target="_blank" rel="noopener noreferrer me" aria-label="Perfil ORCID de Luis Ángel Anillo">ORCID</a>
+            <a class="chip chip-link" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001648158" target="_blank" rel="noopener noreferrer" aria-label="CvLAC Minciencias de Luis Ángel Anillo">CvLAC · Minciencias</a>
+          </div>
 
           <div class="software reveal" aria-label="Software estadístico">
             <span class="soft-label">Software:</span>
@@ -572,6 +601,12 @@
             <label for="cf-hp">No llenar</label>
             <input id="cf-hp" name="_hp" type="text" tabindex="-1" autocomplete="off" />
           </div>
+          <div class="field field-consent">
+            <label class="consent-label">
+              <input type="checkbox" id="cf-consent" name="consent" required />
+              <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a>. Autorizo el uso de mis datos para contacto y comunicaciones de marketing.</span>
+            </label>
+          </div>
           <button class="btn btn-primary" type="submit">Enviar mensaje</button>
           <p class="form-status" data-form-status role="status" aria-live="polite"></p>
         </form>
@@ -583,7 +618,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">Lα</span>
+        <img class="brand-mark" src="assets/img/ISOTIPO ANILLO.png" alt="Logo Luis Ángel Anillo" />
         <div>
           <strong>Luis Ángel Anillo Arrieta</strong>
           <span>Asesoría Estadística en Salud · Barranquilla, Colombia</span>
@@ -596,6 +631,7 @@
         <a href="#contacto">Contacto</a>
         <a data-email href="mailto:anilloluis1@gmail.com">Correo</a>
         <a data-instagram href="https://instagram.com/luisanillo.stats" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="politica-privacidad.html">Política de Privacidad</a>
       </nav>
     </div>
     <div class="container footer-bottom">

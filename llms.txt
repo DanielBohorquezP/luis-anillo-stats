@@ -2,11 +2,19 @@
 
 > Doctor en Ciencias Naturales (Estadística en Salud), Magíster en Estadística Aplicada, Economista. Investigador reconocido por Minciencias (agencia colombiana de ciencia y tecnología). Profesor Investigador en la Universidad del Norte, Barranquilla, Colombia. Más de 10 años de experiencia en análisis de datos en salud. Más de 20 artículos publicados, varios en revistas Q1. Ofrece asesoría estadística para investigación médica y clínica de forma remota a toda Colombia.
 
+## Identidad académica verificable
+
+- ORCID: https://orcid.org/0000-0002-3136-7636
+- CvLAC (Minciencias): https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001648158
+- Universidad del Norte: https://www.uninorte.edu.co/
+
 ## Servicios
 
 - Asesoría estadística para investigación médica y clínica (diseño de estudio, pruebas de hipótesis, modelos de regresión)
 - Desarrollo y revisión de tesis de maestría y doctorado (diseño metodológico, análisis avanzado, redacción de resultados)
 - Machine learning y análisis predictivos en salud (modelos predictivos, clasificación, modelamiento de enfermedades crónicas e infecciosas)
+- Visualización de datos (dashboards, gráficas para publicaciones científicas, comunicación visual de resultados)
+- Análisis geoespacial (mapas de distribución de enfermedades, análisis espacial de indicadores en salud)
 - Construcción y publicación de artículos científicos (estructura, selección de revista, respuesta a revisores)
 
 ## Software estadístico
@@ -22,7 +30,7 @@ Atención remota a toda Colombia: Barranquilla, Bogotá, Medellín, Cali, Bucara
 - Doctor en Ciencias Naturales (Estadística en Salud)
 - Magíster en Estadística Aplicada
 - Economista
-- Investigador reconocido por Minciencias
+- Investigador reconocido por Minciencias — ORCID: https://orcid.org/0000-0002-3136-7636
 - Profesor Investigador — Universidad del Norte (uninorte.edu.co)
 
 ## Publicaciones recientes (Q1)
