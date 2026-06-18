@@ -465,7 +465,7 @@ section { position: relative; }
   box-shadow: var(--shadow-sm); overflow: hidden;
   transition: border-color .25s var(--ease-out);
 }
-.faq-item[open] { border-color: rgba(31,111,235,.35); }
+.faq-item.is-open { border-color: rgba(31,111,235,.35); }
 .faq-item summary {
   list-style: none; cursor: pointer;
   padding: 1.15rem 1.3rem; font-weight: 600; font-size: 1.02rem;
@@ -474,10 +474,22 @@ section { position: relative; }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary::after {
   content: "+"; margin-left: auto; font-size: 1.5rem; font-weight: 400; color: var(--accent);
-  transition: transform .3s var(--ease-out);
+  transition: transform .35s var(--ease-out);
 }
-.faq-item[open] summary::after { transform: rotate(45deg); }
-.faq-body { padding: 0 1.3rem 1.25rem; }
+.faq-item.is-open summary::after { transform: rotate(45deg); }
+.faq-body {
+  padding: 0 1.3rem;
+  padding-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .45s var(--ease-out), opacity .3s ease, padding-bottom .45s var(--ease-out);
+}
+.faq-item.is-open .faq-body {
+  max-height: 400px;
+  opacity: 1;
+  padding-bottom: 1.25rem;
+}
 .faq-body p { color: var(--ink-soft); }
 
 /* =============================================================

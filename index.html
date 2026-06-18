@@ -536,13 +536,32 @@
 
     <script>
     (function(){
+      // Ver más — publicaciones
       var btn = document.getElementById('btn-ver-mas-pubs');
       var extra = document.getElementById('pubs-extra-list');
-      if (!btn || !extra) return;
-      btn.addEventListener('click', function(){
-        var open = extra.classList.toggle('is-open');
-        btn.querySelector('.btn-ver-mas-icon').style.transform = open ? 'rotate(180deg)' : '';
-        btn.childNodes[0].textContent = open ? 'Ver menos' : 'Ver más';
+      if (btn && extra) {
+        btn.addEventListener('click', function(){
+          var open = extra.classList.toggle('is-open');
+          btn.querySelector('.btn-ver-mas-icon').style.transform = open ? 'rotate(180deg)' : '';
+          btn.childNodes[0].textContent = open ? 'Ver menos' : 'Ver más';
+        });
+      }
+
+      // FAQ animado
+      document.querySelectorAll('.faq-item').forEach(function(item) {
+        if (item.open) item.classList.add('is-open');
+        item.querySelector('summary').addEventListener('click', function(e) {
+          e.preventDefault();
+          if (item.classList.contains('is-open')) {
+            item.classList.remove('is-open');
+            setTimeout(function() { item.removeAttribute('open'); }, 420);
+          } else {
+            item.setAttribute('open', '');
+            requestAnimationFrame(function() {
+              requestAnimationFrame(function() { item.classList.add('is-open'); });
+            });
+          }
+        });
       });
     })();
     </script>
