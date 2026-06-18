@@ -519,7 +519,7 @@
           <li><span class="pub-tag">Q1</span> <em>Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano.</em> <span class="pub-journal">Primary Care Diabetes · 2024</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
         </ul>
 
-        <ul class="pubs-list pubs-list-extra" id="pubs-extra-list" hidden>
+        <ul class="pubs-list pubs-list-extra" id="pubs-extra-list">
           <li><span class="pub-tag">Q1</span> <em>Longitudinal health survey of women from Venezuela in Colombia (ELSA-VENCOL): First report.</em> <span class="pub-journal">PLOS ONE · Marzo 2023</span> <a href="https://doi.org/10.1371/journal.pone.0274157" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
           <li><span class="pub-tag">Q1</span> <em>Glycemic status and health-related quality of life (HRQOL) in populations at risk of diabetes in two Latin American cities.</em> <span class="pub-journal">Quality of Life Research · 2023</span> <a href="https://doi.org/10.1007/s11136-023-03398-x" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
           <li><span class="pub-tag">Q1</span> <em>Health-related quality of life (HRQoL) in a population at risk of type 2 diabetes: a cross-sectional study in two Latin American cities.</em> <span class="pub-journal">Health and Quality of Life Outcomes · 2021</span> <a href="https://doi.org/10.1186/s12955-021-01894-7" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
@@ -540,10 +540,9 @@
       var extra = document.getElementById('pubs-extra-list');
       if (!btn || !extra) return;
       btn.addEventListener('click', function(){
-        var open = !extra.hidden;
-        extra.hidden = open;
-        btn.querySelector('.btn-ver-mas-icon').style.transform = open ? '' : 'rotate(180deg)';
-        btn.childNodes[0].textContent = open ? 'Ver más' : 'Ver menos';
+        var open = extra.classList.toggle('is-open');
+        btn.querySelector('.btn-ver-mas-icon').style.transform = open ? 'rotate(180deg)' : '';
+        btn.childNodes[0].textContent = open ? 'Ver menos' : 'Ver más';
       });
     })();
     </script>
