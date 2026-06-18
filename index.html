@@ -518,8 +518,35 @@
           <li><span class="pub-tag">Q1</span> <em>Determinantes del control glucémico en atención primaria: análisis poblacional en pacientes con diabetes tipo 2.</em> <span class="pub-journal">Primary Care Diabetes · 2025</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(25)00083-X/fulltext" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
           <li><span class="pub-tag">Q1</span> <em>Factores asociados a la adherencia terapéutica en diabetes: un estudio multicéntrico en el contexto latinoamericano.</em> <span class="pub-journal">Primary Care Diabetes · 2024</span> <a href="https://www.primary-care-diabetes.com/article/S1751-9918(24)00114-1/fulltext" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
         </ul>
+
+        <ul class="pubs-list pubs-list-extra" id="pubs-extra-list" hidden>
+          <li><span class="pub-tag">Q1</span> <em>Longitudinal health survey of women from Venezuela in Colombia (ELSA-VENCOL): First report.</em> <span class="pub-journal">PLOS ONE · Marzo 2023</span> <a href="https://doi.org/10.1371/journal.pone.0274157" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Glycemic status and health-related quality of life (HRQOL) in populations at risk of diabetes in two Latin American cities.</em> <span class="pub-journal">Quality of Life Research · 2023</span> <a href="https://doi.org/10.1007/s11136-023-03398-x" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
+          <li><span class="pub-tag">Q1</span> <em>Health-related quality of life (HRQoL) in a population at risk of type 2 diabetes: a cross-sectional study in two Latin American cities.</em> <span class="pub-journal">Health and Quality of Life Outcomes · 2021</span> <a href="https://doi.org/10.1186/s12955-021-01894-7" target="_blank" rel="noopener noreferrer">Leer artículo →</a></li>
+        </ul>
+
+        <div class="pubs-more-wrap">
+          <button class="btn btn-ghost btn-ver-mas" id="btn-ver-mas-pubs" type="button">
+            Ver más
+            <svg class="btn-ver-mas-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
       </div>
     </section>
+
+    <script>
+    (function(){
+      var btn = document.getElementById('btn-ver-mas-pubs');
+      var extra = document.getElementById('pubs-extra-list');
+      if (!btn || !extra) return;
+      btn.addEventListener('click', function(){
+        var open = !extra.hidden;
+        extra.hidden = open;
+        btn.querySelector('.btn-ver-mas-icon').style.transform = open ? '' : 'rotate(180deg)';
+        btn.childNodes[0].textContent = open ? 'Ver más' : 'Ver menos';
+      });
+    })();
+    </script>
 
     <!-- ============================= FAQ ============================= -->
     <section class="faq" id="faq">

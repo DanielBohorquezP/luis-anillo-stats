@@ -430,6 +430,10 @@ section { position: relative; }
 .pubs-list li em { flex: 1 1 auto; min-width: 200px; color: var(--ink); font-style: italic; }
 .pub-journal { font-size: .78rem; color: var(--ink-mute); white-space: nowrap; flex: none; }
 .pubs-list a { color: var(--accent); font-weight: 600; font-size: .9rem; white-space: nowrap; }
+.pubs-list-extra { border-top: none; }
+.pubs-more-wrap { text-align: center; margin-top: 1.75rem; }
+.btn-ver-mas { display: inline-flex; align-items: center; gap: .4rem; }
+.btn-ver-mas-icon { transition: transform .3s ease; flex: none; }
 
 /* =============================================================
    16. FAQ
