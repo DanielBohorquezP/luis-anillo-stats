@@ -465,7 +465,7 @@ section { position: relative; }
 .contact-copy h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4.6vw, 2.9rem); margin-bottom: 1rem; }
 .contact-copy > p { color: var(--ink-soft); }
 .contact-direct { display: grid; gap: .9rem; margin-top: 1.8rem; justify-items: start; }
-.contact-link { font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.contact-link { display: inline-flex; align-items: center; gap: .45rem; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: color .2s, border-color .2s; }
 .contact-link:hover { color: var(--accent); border-color: var(--accent); }
 
 .contact-form { padding: clamp(1.5rem, 3vw, 2.2rem); display: grid; gap: 1.1rem; }
@@ -497,6 +497,13 @@ section { position: relative; }
 .footer-links { display: flex; flex-wrap: wrap; gap: .4rem 1.3rem; }
 .footer-links a { color: var(--ink-soft); font-size: .92rem; transition: color .2s; }
 .footer-links a:hover { color: var(--accent); }
+.footer-social-row { display: flex; flex-wrap: wrap; gap: 1.2rem 2.5rem; padding: 1.4rem 0; border-top: 1px solid var(--line-2); }
+.footer-social, .footer-academic { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; }
+.footer-social-label { font-size: .82rem; color: var(--ink-mute); white-space: nowrap; }
+.footer-social-link { display: inline-flex; align-items: center; gap: .45rem; color: var(--ink-soft); font-size: .88rem; text-decoration: none; transition: color .2s; }
+.footer-social-link:hover { color: var(--accent); }
+.footer-academic-link { display: inline-flex; align-items: center; gap: .35rem; color: var(--ink-soft); font-size: .82rem; text-decoration: none; border: 1px solid var(--line-2); border-radius: 20px; padding: .2rem .7rem; transition: color .2s, border-color .2s; }
+.footer-academic-link:hover { color: var(--accent); border-color: var(--accent); }
 .footer-bottom { padding-bottom: 2rem; }
 .footer-bottom p { font-size: .8rem; color: var(--ink-mute); border-top: 1px solid var(--line-2); padding-top: 1.2rem; }
 
