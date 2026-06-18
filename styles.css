@@ -47,6 +47,7 @@
    2. Reset & base
    ============================================================= */
 *, *::before, *::after { box-sizing: border-box; margin: 0; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; tab-size: 2; scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
