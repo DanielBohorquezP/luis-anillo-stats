@@ -483,12 +483,6 @@ section { position: relative; }
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height .45s var(--ease-out), opacity .3s ease, padding-bottom .45s var(--ease-out);
-}
-.faq-item.is-open .faq-body {
-  max-height: 400px;
-  opacity: 1;
-  padding-bottom: 1.25rem;
 }
 .faq-body p { color: var(--ink-soft); }
 

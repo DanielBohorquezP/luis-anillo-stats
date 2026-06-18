@@ -701,19 +701,53 @@
     }
 
     // FAQ animado
+    var TRS = 'max-height .45s cubic-bezier(0.16,1,0.3,1), opacity .3s ease, padding-bottom .45s cubic-bezier(0.16,1,0.3,1)';
+
+    function faqOpen(item, body) {
+      item.classList.add('is-open');
+      body.style.transition = 'none';
+      body.style.maxHeight   = '0';
+      body.style.opacity     = '0';
+      body.style.paddingBottom = '0';
+      void body.offsetHeight; // force reflow so browser commits the 0 values
+      body.style.transition    = TRS;
+      body.style.maxHeight     = body.scrollHeight + 'px';
+      body.style.opacity       = '1';
+      body.style.paddingBottom = '1.25rem';
+    }
+
+    function faqClose(item, body) {
+      item.classList.remove('is-open');
+      body.style.transition    = TRS;
+      body.style.maxHeight     = '0';
+      body.style.opacity       = '0';
+      body.style.paddingBottom = '0';
+      setTimeout(function() { item.removeAttribute('open'); }, 450);
+    }
+
     document.querySelectorAll('.faq-item').forEach(function(item) {
-      if (item.open) item.classList.add('is-open');
+      var body = item.querySelector('.faq-body');
+
+      // Initialize item already open in HTML (no animation on load)
+      if (item.open) {
+        item.classList.add('is-open');
+        body.style.maxHeight     = body.scrollHeight + 'px';
+        body.style.opacity       = '1';
+        body.style.paddingBottom = '1.25rem';
+      }
+
+      // Summary click: only intercept when CLOSING (to animate before removing [open])
       item.querySelector('summary').addEventListener('click', function(e) {
-        e.preventDefault();
-        if (item.classList.contains('is-open')) {
-          item.classList.remove('is-open');
-          setTimeout(function() { item.removeAttribute('open'); }, 420);
-        } else {
-          item.setAttribute('open', '');
-          requestAnimationFrame(function() {
-            requestAnimationFrame(function() { item.classList.add('is-open'); });
-          });
+        if (item.open) {
+          e.preventDefault();
+          faqClose(item, body);
         }
+        // If closed, let native <details> open it; toggle event handles the animation
+      });
+
+      // Native toggle fires after [open] is added — animate opening here
+      item.addEventListener('toggle', function() {
+        if (item.open) faqOpen(item, body);
       });
     });
   })();
