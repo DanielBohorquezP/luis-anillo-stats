@@ -16,4 +16,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://luis-anillo-stats.vercel.app/sitemap.xml
+Sitemap: https://www.dranillostats.com/sitemap.xml
