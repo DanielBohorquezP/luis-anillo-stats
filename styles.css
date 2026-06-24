@@ -470,7 +470,7 @@ section { position: relative; }
    14. Proceso
    ============================================================= */
 .process { padding: clamp(3rem, 7vw, 5rem) 0; }
-.steps { display: grid; gap: 1rem; counter-reset: step; list-style: none; }
+.steps { display: grid; gap: 1rem; counter-reset: step; list-style: none; padding: 0; }
 .step {
   position: relative; padding: 1.6rem 1.6rem 1.6rem 1.6rem;
   border-radius: var(--radius); background: var(--paper);
