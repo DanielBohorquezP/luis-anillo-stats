@@ -408,7 +408,7 @@ section { position: relative; }
    11. Servicios
    ============================================================= */
 .services { padding: var(--section-py) 0; }
-.cards-grid { display: grid; gap: 1.4rem; align-items: start; }
+.cards-grid { display: grid; gap: 1.4rem; align-items: stretch; }
 .card {
   padding: clamp(1.6rem, 3vw, 2.2rem);
   display: flex; flex-direction: column;
@@ -772,6 +772,7 @@ section { position: relative; }
 }
 @media (min-width: 720px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .card { min-height: 620px; }
   .card-toggle { cursor: default; pointer-events: none; }
   .card-toggle-icon { display: none; }
   .aud-grid { grid-template-columns: repeat(2, 1fr); }
