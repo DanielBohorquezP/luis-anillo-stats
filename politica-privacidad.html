@@ -4,13 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK62KZH00H"></script>
+  <!-- Google tag (gtag.js) — loaded after window 'load' to keep it off the critical path -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XK62KZH00H');
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XK62KZH00H';
+      document.head.appendChild(s);
+    });
   </script>
 
   <title>Política de Privacidad · Luis Ángel Anillo</title>
@@ -20,12 +25,14 @@
   <link rel="canonical" href="https://www.dranillostats.com/politica-privacidad/" />
 
   <meta name="theme-color" content="#1f6feb" />
-  <link rel="icon" href="assets/img/ISOTIPO ANILLO A COLOR.png" type="image/png" />
+  <link rel="icon" href="assets/img/logo-anillo.png" type="image/png" />
 
-  <!-- Fonts -->
+  <!-- Fonts (non-blocking: preload + swap once loaded) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" /></noscript>
 
   <link rel="stylesheet" href="styles.css?v=20260617" />
 
@@ -165,7 +172,10 @@
   <nav class="policy-nav" aria-label="Navegación de política">
     <div class="container policy-nav-inner">
       <div class="policy-nav-brand">
-        <img class="brand-mark" src="assets/img/ISOTIPO ANILLO A COLOR.png" alt="Luis Ángel Anillo" />
+        <picture>
+          <source srcset="assets/img/logo-anillo.webp" type="image/webp" />
+          <img class="brand-mark" src="assets/img/logo-anillo.png" alt="Luis Ángel Anillo" width="42" height="42" />
+        </picture>
         Luis Ángel Anillo
       </div>
       <a class="back-link" href="index.html">
@@ -291,7 +301,10 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img class="brand-mark" src="assets/img/ISOTIPO ANILLO A COLOR.png" alt="Logo Luis Ángel Anillo" />
+        <picture>
+          <source srcset="assets/img/logo-anillo.webp" type="image/webp" />
+          <img class="brand-mark" src="assets/img/logo-anillo.png" alt="Logo Luis Ángel Anillo" width="42" height="42" />
+        </picture>
         <div>
           <strong>Luis Ángel Anillo Arrieta</strong>
           <span>Asesoría Estadística en Salud · Barranquilla, Colombia</span>
