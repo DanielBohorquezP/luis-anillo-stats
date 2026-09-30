@@ -840,3 +840,207 @@ section { position: relative; }
   .wa-fab::before { animation: none; }
   .reveal { transition: opacity .3s ease; transform: none; }
 }
+
+/* =============================================================
+   23. Lead form (3 pasos) · Foto Anillo · Mentoría
+   ============================================================= */
+.lead {
+  padding: var(--section-py) 0;
+  background:
+    radial-gradient(60% 70% at 85% 10%, rgba(12,164,234,.28), transparent 65%),
+    radial-gradient(50% 60% at 0% 100%, rgba(36,143,189,.22), transparent 65%),
+    linear-gradient(160deg, var(--bg-dark) 0%, #04026e 100%);
+  color: #fff;
+  overflow: hidden;
+}
+.lead-grid { display: grid; gap: clamp(2.2rem, 5vw, 4rem); align-items: center; }
+.lead-copy h2 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; color: #fff; letter-spacing: -.03em; line-height: 1.08; }
+.lead-copy h2 em { color: var(--accent); }
+.lead-sub { margin-top: 1.4rem; color: rgba(255,255,255,.78); font-size: clamp(1rem, 2vw, 1.12rem); line-height: 1.7; max-width: 46ch; }
+.lead-points { display: grid; gap: .8rem; margin-top: 1.8rem; }
+.lead-points li { display: flex; align-items: center; gap: .7rem; color: rgba(255,255,255,.9); font-size: .95rem; }
+.lead-points .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(12,164,234,.25); flex: none; }
+.lead-points strong { color: #fff; }
+
+.lead-card {
+  position: relative; background: #fff; color: var(--ink);
+  border-radius: 18px; padding: clamp(1.6rem, 4vw, 2.2rem);
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,.55);
+  overflow: hidden; width: 100%; max-width: 520px; justify-self: center;
+}
+.lead-progress { position: absolute; inset: 0 0 auto 0; height: 6px; background: var(--line); }
+.lead-progress span { display: block; height: 100%; width: 33.33%; background: var(--accent); border-radius: 0 6px 6px 0; transition: width .45s var(--ease-out); }
+.lead-card-title { text-align: center; font-size: clamp(1.3rem, 3vw, 1.6rem); font-weight: 800; letter-spacing: -.02em; margin-top: .6rem; }
+.lead-card-sub { text-align: center; color: var(--ink-mute); font-size: .92rem; margin: .5rem 0 1.4rem; }
+.lead-stephead { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-bottom: .7rem; border-bottom: 1px solid var(--line); margin-bottom: 1.2rem; }
+.lead-stephead strong { font-family: var(--sans); font-size: 1.02rem; }
+.lead-stephead span { color: var(--accent-d); font-size: .82rem; font-weight: 600; white-space: nowrap; }
+
+.lead-step { display: grid; gap: 1.1rem; }
+.lead-step[hidden] { display: none; }
+.lead-step.is-active { animation: leadIn .4s var(--ease-out); }
+@keyframes leadIn { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+.lf-field { display: grid; gap: .4rem; }
+.lf-field label { font-size: .86rem; font-weight: 600; color: var(--ink-soft); }
+.lf-field input, .lf-field select {
+  width: 100%; padding: .85rem 1rem; font: inherit; font-size: .98rem; color: var(--ink);
+  background: #f8fafd; border: 1px solid #d5deea; border-radius: 10px;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.lf-field select {
+  appearance: none; -webkit-appearance: none; cursor: pointer; padding-right: 2.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23020054%27 stroke-width=%272.4%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27m6 9 6 6 6-6%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1rem center;
+}
+.lf-field select:invalid { color: #7d8aa3; }
+.lf-field select optgroup { font-weight: 700; color: var(--ink); font-style: normal; }
+.lf-field select option { color: var(--ink); font-weight: 400; }
+.lf-field input::placeholder { color: #93a0b6; }
+.lf-field input:focus, .lf-field select:focus { outline: none; background: #fff; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(12,164,234,.16); }
+.lf-field.has-error input, .lf-field.has-error select { border-color: #d92d3a; box-shadow: 0 0 0 4px rgba(217,45,58,.10); }
+.lf-error { color: #c4232f; font-size: .8rem; }
+
+.lf-consent { display: flex; gap: .6rem; align-items: flex-start; font-size: .82rem; color: var(--ink-soft); line-height: 1.5; cursor: pointer; }
+.lf-consent input { margin-top: .2rem; flex: none; width: 1rem; height: 1rem; accent-color: var(--accent); }
+.lf-consent a { color: var(--accent-d); text-decoration: underline; }
+
+.lead-actions { display: flex; gap: .7rem; margin-top: 1.5rem; }
+.lead-next, .lead-back { border-radius: 10px; font-weight: 700; font-size: .95rem; padding: .95rem 1.2rem; transition: background-color .2s, transform .2s var(--ease-out), box-shadow .2s; }
+.lead-next { flex: 1; background: var(--accent); color: #fff; text-transform: uppercase; letter-spacing: .08em; box-shadow: var(--shadow-accent); }
+.lead-next:hover { background: var(--bg-dark); transform: translateY(-1px); }
+.lead-next:disabled { opacity: .6; cursor: progress; transform: none; }
+.lead-back { background: #eef3fa; color: var(--ink-soft); }
+.lead-back:hover { background: #e0e9f5; }
+.lead-back[hidden], .lead-next[hidden] { display: none; }
+.lead-status { min-height: 1.2em; margin-top: .9rem; text-align: center; font-size: .88rem; }
+.lead-status.ok { color: #128a43; font-weight: 600; }
+.lead-status.err { color: #c4232f; }
+.lead-foot { margin-top: .6rem; text-align: center; font-size: .78rem; color: var(--ink-mute); }
+.lead-foot strong { color: var(--accent-d); }
+.lead-card.is-done .lead-step, .lead-card.is-done .lead-actions, .lead-card.is-done .lead-stephead { display: none; }
+
+/* Foto Anillo */
+.anillo-photo { padding: var(--section-py) 0; background: var(--bg); }
+.anillo-photo-grid { display: grid; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.anillo-photo-fig { position: relative; max-width: 460px; width: 100%; justify-self: center; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,.8); }
+.anillo-photo-fig img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center 15%; }
+.anillo-photo-copy blockquote { font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; line-height: 1.08; font-size: clamp(1.9rem, 4.8vw, 3.1rem); color: var(--ink); margin-bottom: 1.4rem; text-wrap: balance; }
+.anillo-photo-copy blockquote em { color: var(--accent); font-weight: 800; }
+.anillo-photo-copy > p { color: var(--ink-soft); line-height: 1.75; max-width: 52ch; }
+.anillo-photo-sign { margin-top: 1.6rem; display: grid; gap: .1rem; padding-left: 1rem; border-left: 3px solid var(--accent); }
+.anillo-photo-sign strong { color: var(--ink); }
+.anillo-photo-sign span { font-size: .85rem; color: var(--ink-mute); }
+
+/* Mentoría */
+.mentoria { padding: var(--section-py) 0; background: var(--paper); }
+.anillo-photo + .mentoria { padding-top: clamp(2rem, 5vw, 4rem); }
+.mentoria-pillars { display: grid; gap: 1rem; margin-bottom: 1.6rem; }
+.mp-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm); }
+.mp-num { font-family: var(--sans); font-weight: 800; font-size: .85rem; color: var(--accent); letter-spacing: .1em; }
+.mp-card h3 { font-size: 1.2rem; margin: .5rem 0 .4rem; }
+.mp-card p { color: var(--ink-soft); font-size: .95rem; }
+.mentoria-who { display: grid; gap: .8rem; padding: 1.4rem 1.6rem; background: var(--bg-dark); color: #fff; border-radius: var(--radius); margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+.mentoria-who-label { font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+.mentoria-who ul { display: grid; gap: .5rem; }
+.mentoria-who li { position: relative; padding-left: 1.4rem; color: rgba(255,255,255,.9); font-size: .96rem; }
+.mentoria-who li::before { content: ""; position: absolute; left: 0; top: .55em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.mentoria-offer h3 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); font-weight: 800; }
+.mentoria-offer-lead { color: var(--ink-soft); margin: .8rem 0 2rem; max-width: 62ch; }
+.mstages { display: grid; position: relative; }
+.mstage { display: grid; grid-template-columns: 44px 1fr; gap: 1.1rem; padding-bottom: 1.6rem; position: relative; }
+.mstage:not(:last-child)::before { content: ""; position: absolute; left: 21px; top: 44px; bottom: 0; width: 2px; background: linear-gradient(var(--accent), var(--line)); }
+.mstage-n { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; font-family: var(--sans); font-weight: 800; box-shadow: var(--shadow-accent); }
+.mstage h4 { font-family: var(--sans); font-size: 1.12rem; font-weight: 700; margin-bottom: .3rem; }
+.mstage p { color: var(--ink-soft); font-size: .96rem; max-width: 64ch; }
+.mentoria-note { margin-top: .6rem; padding: 1.2rem 1.4rem; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; color: var(--ink-soft); }
+.mentoria-note strong { color: var(--ink); }
+.mentoria-cta { margin-top: 1.6rem; }
+
+@media (min-width: 960px) {
+  .lead-grid { grid-template-columns: 1.05fr .95fr; }
+  .lead-card { justify-self: end; }
+  .anillo-photo-grid { grid-template-columns: .8fr 1.2fr; }
+  .mentoria-pillars { grid-template-columns: repeat(3, 1fr); }
+  .mentoria-who { grid-template-columns: auto 1fr; align-items: center; gap: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lead-step.is-active { animation: none; }
+  .lead-progress span { transition: none; }
+}
+
+.lead-next-steps { list-style: none; padding-left: 1rem; display: grid; gap: .35rem; margin-top: 1.2rem; padding: .9rem 1rem; background: #f3f8fd; border-radius: 10px; font-size: .84rem; color: var(--ink-soft); }
+.lead-next-steps strong { color: var(--accent-d); margin-right: .25rem; }
+.lead-card.is-done .lead-next-steps { display: none; }
+
+.contact .lead-card { justify-self: end; }
+
+/* =============================================================
+   24. Tres formas de trabajar · Servicios puntuales · Form paso 2/3
+   ============================================================= */
+.choose { margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+.choose h3, .oneoff h3 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); font-weight: 800; }
+.choose-grid { display: grid; gap: 1.1rem; }
+.choose-card {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.6rem; box-shadow: var(--shadow-sm);
+}
+.choose-card.is-rec { border-color: var(--accent); box-shadow: var(--shadow); }
+.choose-badge {
+  position: absolute; top: -.7rem; left: 1.4rem;
+  background: var(--accent); color: #fff; font-size: .7rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; padding: .3rem .8rem; border-radius: 999px;
+}
+.choose-card h4 { font-family: var(--sans); font-size: 1.3rem; font-weight: 700; margin-bottom: .6rem; }
+.choose-card p { color: var(--ink-soft); font-size: .96rem; margin-bottom: 1.4rem; }
+.choose-card .btn { margin-top: auto; }
+
+.mstage-btn { margin-top: .8rem; min-height: 44px; padding: .55rem 1.1rem; font-size: .88rem; }
+.mentoria-offer { margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+
+.oneoff { margin-bottom: clamp(2.5rem, 6vw, 4rem); scroll-margin-top: 90px; }
+.mentoria-offer { scroll-margin-top: 90px; }
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+.svc-card {
+  display: flex; flex-direction: column; gap: .4rem;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1rem; box-shadow: var(--shadow-sm);
+  transition: transform .3s var(--ease-out), border-color .25s, box-shadow .3s var(--ease-out);
+}
+.svc-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--shadow); }
+.svc-card h4 { font-family: var(--sans); font-size: .98rem; font-weight: 700; }
+.svc-card p { color: var(--ink-soft); font-size: .84rem; line-height: 1.5; }
+
+@media (min-width: 720px) {
+  .choose-grid { grid-template-columns: repeat(3, 1fr); }
+  .svc-grid { gap: 1.1rem; }
+  .svc-card { padding: 1.3rem; }
+  .svc-card h4 { font-size: 1.05rem; }
+  .svc-card p { font-size: .9rem; }
+}
+@media (min-width: 960px) {
+  .svc-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Formulario: opciones del paso 2 y campo de texto */
+.lf-choice { border: 0; padding: 0; min-width: 0; }
+.lf-choice legend { font-size: .86rem; font-weight: 600; color: var(--ink-soft); margin-bottom: .5rem; padding: 0; }
+.lf-choice { gap: .55rem; }
+.lf-opt {
+  display: flex; align-items: center; gap: .7rem; cursor: pointer;
+  padding: .8rem 1rem; min-height: 44px; background: #f8fafd; border: 1px solid #d5deea; border-radius: 10px;
+  font-size: .96rem; font-weight: 500; color: var(--ink);
+  transition: border-color .2s, background .2s, box-shadow .2s;
+}
+.lf-opt input { flex: none; width: 1.05rem; height: 1.05rem; accent-color: var(--accent); }
+.lf-opt:hover { border-color: var(--accent); }
+.lf-opt:has(input:checked) { border-color: var(--accent); background: #fff; box-shadow: 0 0 0 4px rgba(12,164,234,.14); }
+.lf-opt:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.lf-field textarea {
+  width: 100%; padding: .85rem 1rem; font: inherit; font-size: .98rem; color: var(--ink); resize: vertical; min-height: 5.5rem;
+  background: #f8fafd; border: 1px solid #d5deea; border-radius: 10px;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.lf-field textarea:focus { outline: none; background: #fff; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(12,164,234,.16); }
+.lf-field.has-error .lf-opt { border-color: #d92d3a; }
+.lf-field[hidden] { display: none; }
