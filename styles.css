@@ -1045,6 +1045,6 @@ section { position: relative; }
 .lf-field.has-error .lf-opt { border-color: #d92d3a; }
 .lf-field[hidden] { display: none; }
 
-.footer-bottom p + p { margin-top: .3rem; }
+.footer-bottom p + p { margin-top: .3rem; border-top: 0; padding-top: 0; }
 .footer-bottom a { text-decoration: underline; text-underline-offset: 2px; transition: color .2s; }
 .footer-bottom a:hover { color: var(--accent); }
