@@ -1044,3 +1044,7 @@ section { position: relative; }
 .lf-field textarea:focus { outline: none; background: #fff; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(12,164,234,.16); }
 .lf-field.has-error .lf-opt { border-color: #d92d3a; }
 .lf-field[hidden] { display: none; }
+
+.footer-bottom p + p { margin-top: .3rem; }
+.footer-bottom a { text-decoration: underline; text-underline-offset: 2px; transition: color .2s; }
+.footer-bottom a:hover { color: var(--accent); }
